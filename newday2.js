@@ -46,7 +46,7 @@ console.log(`tomorrow for breakfast i will be having ${breakfast}, Followed by${
 // Look for ‘Javascript Date’ on MDN. 
 
 let myBirthday, today, bday, diff, days;
-myBirthday = [17,3]; // my birthday
+myBirthday = [17,3,1975]; // my birthday
 today = new Date();
 bday = new Date(today.getFullYear(),myBirthday[1]-1,myBirthday[0]);
 if( today.getTime() > bday.getTime()) {
@@ -55,7 +55,7 @@ if( today.getTime() > bday.getTime()) {
 diff = bday.getTime()-today.getTime();
 days = Math.floor(diff/(1000*60*60*24));
 //console.log(days+" days until my birthday!which is on");
-console.log(`Its ${days}until your Birthday, which is on ${myBirthday}`);
+console.log(`Its ${days} until your Birthday, which is on ${myBirthday}`);
 
 function daysUntilNext(month, day){
     let tday= new Date(), y= tday.getFullYear(), next= new Date(y, month-1, day);
