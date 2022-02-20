@@ -127,6 +127,18 @@ else {
 // gtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi”. Find the 
 // index of a last vowel in the string.
 
+const string ="jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
+let searchFor = ["a","e","i","o","u"]//list of vowels to search 
+console.log(`not sure this is what i wanted as a result ${searchFor}`);
+console.log(`The index of the first "${searchFor}" from the end is ${string.lastIndexOf(searchFor)}`);
+// expected output: "The index of the first ["a","e","i","o","u"] from the end is -1."
+
+//The lastIndexOf() method,
+//given one argument: a substring to search for, searches the entire calling string,
+//and returns the index of the last occurrence of the specified substring.
+//Given a second argument: a number,
+//the method returns the last occurrence of the specified substring at an index less than or equal to the specified number.
+
 //Activity Eight
 // Create a variable called time, a variable called placeOfWork 
 // and a variable called townOfHome. Create an if statement that 
