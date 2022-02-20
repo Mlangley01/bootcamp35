@@ -44,18 +44,22 @@ console.log(`tomorrow for breakfast i will be having ${breakfast}, Followed by${
 // Create a program that calculates the number 
 // of days from today to your birth date. 
 // Look for ‘Javascript Date’ on MDN. 
+//JavaScript Date objects represent a single moment in time in a platform-independent format.
+// Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
+//Note: It's important to keep in mind that while the time value at the heart of a Date object is UTC,
+// the basic methods to fetch the date and time or its components all work in the local (i.e. host system) time zone and offset.
 
-let myBirthday, today, bday, diff, days;
+let myBirthday, today, bday, diff, days; //declared variables
 myBirthday = [17,3,1975]; // my birthday
-today = new Date();
-bday = new Date(today.getFullYear(),myBirthday[1]-1,myBirthday[0]);
+today = new Date();// use date as var fetches todays date 
+bday = new Date(today.getFullYear(),myBirthday[1]-1,myBirthday[0]);//birthday 
 if( today.getTime() > bday.getTime()) {
     bday.setFullYear(bday.getFullYear()+1);
 }
 diff = bday.getTime()-today.getTime();
 days = Math.floor(diff/(1000*60*60*24));
 //console.log(days+" days until my birthday!which is on");
-console.log(`Its ${days} until your Birthday, which is on ${myBirthday}`);
+console.log(`Its ${days} day's until your Birthday, which is on ${myBirthday}`);
 
 function daysUntilNext(month, day){
     let tday= new Date(), y= tday.getFullYear(), next= new Date(y, month-1, day);
