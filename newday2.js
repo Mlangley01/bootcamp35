@@ -61,6 +61,8 @@ days = Math.floor(diff/(1000*60*60*24));
 //console.log(days+" days until my birthday!which is on");
 console.log(`Its ${days} day's until your Birthday, which is on ${myBirthday}`);
 
+// A different way to do it create a function that calculates the time until a given date requires the use of Date 
+
 function daysUntilNext(month, day){
     let tday= new Date(), y= tday.getFullYear(), next= new Date(y, month-1, day);
     tday.setHours(0, 0, 0, 0);
@@ -77,3 +79,6 @@ else console.log(d+' day'+(d>1? 's': '')+' until Christmas');
 let d1= daysUntilNext(4, 26); 
 if(d1=== 0) console.log('Happy Birthday!');
 else console.log(d1+' day'+(d1>1? 's': '')+' until your birthday');
+
+
+// Need to do more research in Date as a function and how to specify its arguments correctly

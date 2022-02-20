@@ -81,25 +81,44 @@ if (password.length ==8){
     console.log(`${password} Too Long`);
 }
 
-
-
-//Activity Four 
+//Activity Four. 
 //Create a variable called num. 
 // Check if the variable is divisible by 3 or 5. If it 
 // is, log “This number is divisible by 3 or 5”. 
 // Otherwise log something else.
 
+let num = 23;
+  if (num % 3 == 0 && num % 5 == 0){
+      console.log("This number is divisible by 3 or 5")
+  }else {
+      console.log("This number is not divisible by 3 or 5")
+  }
 
+//Activity Five. 
+//Create a variable called num.If num is divisible by 3 log “fizz” to the console,
+//if it’s divisible by 5 log “buzz” to the console, if it’s divisible by both 3 and 5 log 
+//“fizz buzz” to the console.
+//Otherwise log num to the console.
 
-
-//Create a variable called num.
-//If num is divisible by 3 log “fizz” to the console, if it’s divisible by 
-//5 log “buzz” to the console, if it’s divisible by both 3 and 5 log 
-//“fizz buzz” to the console. Otherwise log num to the console.
+let num3 = 15
+if(num3 % 3 == 0 && num3 % 5 == 0){
+    console.log("fizz buzz")
+}
+else if(num3 % 3 == 0){
+    console.log("fizz")
+}
+else if(num3 % 5 == 0){
+    console.log("buzz")
+}
+else {
+    console.log(num3)
+}
+//Activity Six.
 //Create a variable called num.
 // Check if the number is a palindrome (looks the 
 // same forward as it does backwards e.g. 1001 or 
 // 20202). 
+
 // Activity 6:
 
 // Activity 7: JS
@@ -118,8 +137,9 @@ if (password.length ==8){
 //Create a variable called word that takes a string. Create 
 //an if statement that checks if the last letter is the same as 
 //the first. If it is return true, otherwise return false.
+
 let wordstring = "madam"
-wordstring ="not a pallindrome1"
+wordstring ="not a pallindrome1"// remove this line for true
 //check a str using charAt and specifying the letter value(0)is equal to the last letter in the words length-1 
 if (wordstring.charAt(0) == wordstring.charAt(wordstring.length - 1)){
     console.log(true)
@@ -130,7 +150,7 @@ else {
 
 
 //Activity Ten
-//Create two variables called num1 and num2.
-//Create an if statement that checks if the result of the 
-//sum is even. If it is return the number, otherwise return 
-//the numbers multiplied together.
+//Create two variables called num1 and num2. 
+//Create an if statement that checks if the result of thesum is even.
+//If it is return the number, 
+//Otherwise return the numbers multiplied together.
