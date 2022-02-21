@@ -4,7 +4,7 @@
 console.log("hello"); // prints ("whatever is in here!")
 console.log("hello world".toUpperCase())// changes everything in ("")to caps
 console.log(Math.floor(Math.random()*10));// does spooky/simple math via built in function using math.random
-console.log(Math.ceil(Math.random()*10));// ()brackets picks number*multipls by int value 
+console.log(Math.ceil(Math.random()*10));// ()brackets picks number*multiples by int value 
 console.log(Math.round(Math.random()*10));
 
 console.log("  |    |  ")// simple way to print out a fixed postion grid 

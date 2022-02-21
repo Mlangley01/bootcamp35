@@ -1,4 +1,4 @@
-//Activity Three 
+//Activity One 
 //Create a variable called age. Write an if statement
 //that logs “Yes I can serve you” if the age is greater 
 //than 17 and else logs “You aren’t old enough”
@@ -88,7 +88,7 @@ if (password.length ==8){
 // Otherwise log something else.
 
 let num = 23;
-  if (num % 3 == 0 && num % 5 == 0){
+  if (num % 3 == 0 && num % 5 == 0){        //checks if the num is divisible by 3 and 5 with no remainder
       console.log("This number is divisible by 3 or 5")
   }else {
       console.log("This number is not divisible by 3 or 5")
@@ -119,7 +119,9 @@ else {
 // same forward as it does backwards e.g. 1001 or 
 // 20202). 
 
-// Activity 6:
+//let palindrome = 100001,
+//for (let i = 9; i>=0;i++){
+    //     console.log(i);
 
 // Activity 7: JS
 // Take the string 
@@ -143,7 +145,8 @@ console.log(`The index of the first "${searchFor}" from the end is ${string.last
 // Create a variable called time, a variable called placeOfWork 
 // and a variable called townOfHome. Create an if statement that 
 //logs to the console where someone is at times of the day. E.g. if 
-//the time is 7 I’m at home, at 8 I’m commuting, at 9 I’m at work. 
+//the time is 7 I’m at home, at 8 I’m commuting, at 9 I’m at work.
+
 
 //Activity Nine
 //Create a variable called word that takes a string. Create 
