@@ -100,7 +100,7 @@ let num = 23;
 //“fizz buzz” to the console.
 //Otherwise log num to the console.
 
-let num3 = 15
+let num3 = 15;
 if(num3 % 3 == 0 && num3 % 5 == 0){
     console.log("fizz buzz")
 }
@@ -119,11 +119,39 @@ else {
 // same forward as it does backwards e.g. 1001 or 
 // 20202). 
 
-//let palindrome = 100001,
-//for (let i = 9; i>=0;i++){
-    //     console.log(i);
+// let bob = 1001;
+// if( bob.length 0);{
+//     console.log(`Your number${bob}is a pallindrome.`)
+// }else{
+//     console.log("did you read the question?.")
+// }
+function rev_num()
+{
+let bob = 101101;
+let n= bob;
+let rev = 0, rem;
+while (n>0)
+{
+rem = n % 10;
+rev = rev * 10 + rem ;
+n = Math.floor(n/10);
+}
+console.log(`The given number is ${bob} The reversed number is ${rev} .`);
+if (bob === rev){
+    console.log(`${bob} is a palindrome.`);
+}
+while (bob != rev) {
+    console.log(`${bob} is not a palindrome.`);
+    break;
+}
+}; 
+//else{
+  //  console.log(`Your number ${bob} is not a palindrome.`)
+//}
+rev_num();
 
-// Activity 7: JS
+
+// Activity 7: 
 // Take the string 
 // “jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuh 
 // gtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi”. Find the 
