@@ -175,6 +175,21 @@ console.log(`The index of the first "${searchFor}" from the end is ${string.last
 //logs to the console where someone is at times of the day. E.g. if 
 //the time is 7 I’m at home, at 8 I’m commuting, at 9 I’m at work.
 
+let hour = 5;
+let placeOfWork = "work";
+let homeOfTown = "home";
+if( hour == 7 && homeOfTown == "home"){
+    console.log("I'm at home");
+}else if (hour == 8){
+    console.log("I'm commuting");
+}
+else if (hour == 9 && placeOfWork == "work"){
+    console.log("I am at work");
+}else {
+    console.log ("ZZZZZZZZ! Go Away,Im sleeping")
+}// Thanks to Leenah and Thomas for helping me get this to work previously i was using more than else statement 
+//and getting several errors forgot to use else if 
+
 
 //Activity Nine
 //Create a variable called word that takes a string. Create 
@@ -185,11 +200,11 @@ let wordstring = "madam"
 wordstring ="not a pallindrome1"// remove this line for true
 //check a str using charAt and specifying the letter value(0)is equal to the last letter in the words length-1 
 if (wordstring.charAt(0) == wordstring.charAt(wordstring.length - 1)){
-    console.log(true)
+    console.log(true);
 }
 else {
-    console.log(false)
-}
+    console.log(false);
+};
 
 
 //Activity Ten
@@ -197,3 +212,14 @@ else {
 //Create an if statement that checks if the result of thesum is even.
 //If it is return the number, 
 //Otherwise return the numbers multiplied together.
+
+//Activity 10
+
+let bert1 = 4;
+let bert2 = 5;
+let sum = bert1 + bert2
+if  (sum % 2 == 0){
+ console.log("Numbers are Even");
+}else {
+    console.log(bert1*bert2);
+};
